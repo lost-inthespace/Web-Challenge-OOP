@@ -1,0 +1,10 @@
+{
+  "name": "testJS",
+  "version": "1.0.0",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}

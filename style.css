@@ -1,0 +1,83 @@
+:root {
+    --font-size: 2rem;
+    --border-color: black;
+    --border-width: 2px;
+    --border-radius: 5px;
+    --button-padding: 10px;
+}
+
+.container {
+    align-content: center;
+    display: flow-root;
+    grid-template-columns: repeat(2, 3fr);
+}
+
+body {
+    background-image:url("shutterstock_1124840219.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    text-align: center;
+    font-size: var(--font-size);
+    font-family: "Arial Hebrew", sans-serif;
+}
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.input-field {
+    font-size: var(--font-size);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.greet-button {
+    font-size: var(--font-size);
+    cursor: pointer;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--button-padding);
+    box-sizing: border-box;
+    line-height: 1.5;
+    transition: background-color 0.5s;
+}
+
+.greet-button:hover {
+    background-color: lightgrey;
+}
+
+.greet-button:focus {
+    outline: none;
+}
+
+h1 {
+    animation: text-color 3s linear infinite;
+}
+
+@keyframes text-size {
+    0% {
+        font-size: var(--font-size);
+    }
+    50% {
+        font-size: calc(var(--font-size)) 1.5;
+    }
+    75% {
+        font-size: calc(var(--font-size)) 2.0 ;
+    }
+    100% {
+        font-size: var(--font-size);
+    }
+}
+
+p {
+    animation-fill-mode: initial;
+}
+
+footer {
+    text-align: center;
+}
